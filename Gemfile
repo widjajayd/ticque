@@ -71,5 +71,7 @@ group :test do
   gem "selenium-webdriver"
   gem "webdrivers"
 end
-
+# user authentication
 gem 'devise'
+# bootstrap
+gem 'bootstrap', '~> 5.1.3'
