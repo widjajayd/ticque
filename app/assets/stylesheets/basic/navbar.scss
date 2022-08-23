@@ -1,0 +1,47 @@
+@import "basic/color_theme.scss";
+
+$header-background-color: $theme-color-primary;  /* navbar color */
+$navbar-brand-color: $theme-color-black; /* brand */
+$navbar-menu-color:  $theme-color-black; /* right menu color no hover */
+$navbar-menu-hover-color: $theme-color-warning; /* hover */
+
+#header { 
+  background: $header-background-color; 
+}
+
+.navbar-brand {
+  font-family: 'Roboto Condensed', sans-serif;
+  color: $navbar-brand-color;
+  letter-spacing: -0.05em;
+  font-size: 1.4em;
+  margin: 0;
+  padding-left: 0;
+  margin-right: 0;
+}
+ 
+.nav .nav-item .nav-link {
+  color: $navbar-menu-color;
+  &:hover {     
+    color: $navbar-menu-hover-color;
+  }
+  &:focus {
+    color: $navbar-brand-color;
+  }
+}
+
+.nav {
+  .nav-item {
+    font-size: 1em;
+  }
+}
+
+.img-photo-profile {
+  // border: 0.15em solid #cccccc;
+  border: 0.1rem solid #cccccc;
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 0rem;
+  margin: 0rem;
+  // margin-top: 0.15em;
+  // margin-right: 0.15em;
+}

@@ -1,0 +1,39 @@
+.card {
+  margin: 0.5rem 0.2rem 2rem 0.2rem;
+  background-clip: border-box;
+  border: none;
+  // border: 1px solid rgba(0,0,0,.125);
+  border-radius: .7rem;  
+  .card-header {
+    background-color: #DCE8EB;
+    color: #555;
+    font-weight: 700;
+    margin: 0.1rem;
+    border: none;
+    background-clip: border-box;
+    // border-radius: .5rem;
+    border-top-left-radius: .5rem;
+    border-top-right-radius: .5rem; 
+  }
+  .card-body {
+    margin: 0.5rem 0.2rem 0.2rem 0.2rem;
+    padding: 0.1rem 0.3rem 1rem 0.3rem;
+    form {
+      padding: 0.3rem;
+    }    
+  }
+  .card, button, .btn {
+    margin-left: 0.3rem;
+  }
+  .tab-pane {
+    padding: 0.5rem 0.2rem 0.5rem 0.2rem;
+  }
+  .nav-tabs .nav-link.active {
+    font-weight:bold;
+    background-color: transparent;
+    border-bottom:3px solid #dd0000;
+    border-right: none;
+    border-left: none;
+    border-top: none;
+  }
+}

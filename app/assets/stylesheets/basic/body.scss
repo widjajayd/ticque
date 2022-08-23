@@ -1,0 +1,51 @@
+@import "basic/color_theme.scss";
+// set font
+$default-font-family: 'Nunito', sans-serif;
+
+// set color theme
+$primary-dark: #7A6A53;
+$secondary-dark: #948C75;
+$icon-background: #99B2B7; 
+$primary-background: #ECF1F2; 
+$primary-highlight: #DCE8EB; 
+$secondary-highlight: #00B4CC;
+$third-highlight: #ce7f3a;
+$primary-text: #555;
+
+.md-10 { font-size: 10px; }
+
+.container-fluid {
+  padding: 0;
+}
+
+body { 
+  margin: 0;    
+  background-color: #ECF1F2 !important;
+}
+
+body, ul, li, p, label, input, div, .h1, .h2, .h3 {
+  font-family: $default-font-family;
+  color: $primary-text;
+  font-size: 1.1rem;
+  letter-spacing: -0.01rem;
+  text-decoration: none;
+}
+
+a, a:hover {
+  color: $secondary-highlight;
+  text-decoration: none;
+}
+
+.form-check-input {
+  padding: 0.7rem;
+}
+
+.btn-primary  { color: white; background-color: #4485bf; }
+
+#logo {
+  height: 35px;
+}
+
+.font-bold { font-weight: 600; }
+.text-center { text-align: center;}
+

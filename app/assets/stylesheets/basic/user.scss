@@ -1,0 +1,10 @@
+@import "basic/mixins.scss";
+
+#table-user-list {
+  @include setting_table_list(1em);    
+  .kolom-email        { width:30%; }
+  .kolom-phone-number { width:30%; }
+  .kolom-show         { width:5%; }
+  .kolom-edit         { width:5%; }
+  .kolom-destroy      { width:5%; }
+}

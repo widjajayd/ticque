@@ -1,0 +1,137 @@
+// table mixins
+$default-font-md: 1em;
+
+@mixin setting_table_create_data {
+  width:100%;
+  vertical-align: middle;
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin-top: 1em;
+
+  .remove-button { 
+    height:28px;
+    width:28px; 
+    padding:0;
+    vertical-align: middle;
+    text-align: center;
+    background-color: #FF9999;
+    color: #FFFFFF;
+  }
+
+  tr {
+    height: 2.5em;
+
+    // border: 1px solid #cccccc;
+  }
+  td {
+    // border: 1px solid #cccccc;
+  }
+
+  input {
+    border: 1px solid #cccccc;
+    width: 96%;
+    margin: 1%;
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+
+  thead {
+    background-color: #6e8ba8;
+    color: white;
+    th {
+      text-align: center;
+      font-size: $default-font-md;
+    }
+  }
+
+  tfoot {
+    border-top: 2px solid #ccc;
+    .label-footer, .text-muted {
+      font-size: $default-font-md;
+    }
+    .label-footer {
+      font-weight: 600;
+    }
+  }    
+}
+
+@mixin setting_table_list($body-font-size) {
+  width:100%;
+  vertical-align: middle;
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin-top: 1em; 
+  
+  thead {
+    background-color: #6d8ba9;
+    th {
+      text-align: center;
+      font-size: $default-font-md;
+    }
+    a {
+      color: #FFFFFF;
+    }
+    a:hover {
+      color: #ffd45b;
+    }
+  }
+
+  tbody {
+    tr {
+      font-size: $body-font-size;
+    }
+  }    
+}
+
+@mixin setting_table_show($body-font-size) {
+  width:100%;
+  vertical-align: middle;
+  border-collapse: collapse;
+  border-spacing: 0;
+  tr {
+    height: 2.5em;
+  }    
+  thead {
+    background-color: #6d8ba9;
+    th {
+      height: 3em;
+      text-align: center;
+      font-size: $default-font-md;
+      color: #FFFFFF;
+    }
+    a:hover {
+      color: #ffd45b;
+    }
+  }
+  tbody {
+    tr {
+      font-size: $body-font-size;
+      border-top: 1px solid #ddd;
+    }
+  }
+  tfoot {
+    border-top: 3px solid #ccc;
+    font-size: $default-font-md;
+    .label-footer, .text-muted {
+      
+    }
+    .label-footer {
+      font-weight: 600;
+    }
+  }     
+}
+
+@mixin setting_table_report($body-font-size) {
+  width:100%;
+  vertical-align: middle;
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin-top: 1em; 
+
+  tbody {
+    tr {
+      font-size: $body-font-size;
+    }
+  }    
+}
+
